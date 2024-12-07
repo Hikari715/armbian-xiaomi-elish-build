@@ -36,6 +36,9 @@ jobs:
         FLAVOR: [debian]
         BRANCH: [current]
         RELEASE: [trixie]
+        BUILD_DESKTOP: [yes]
+        DESKTOP_ENVIRONMENT: [gnome]
+        EXPERT: [yes]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
