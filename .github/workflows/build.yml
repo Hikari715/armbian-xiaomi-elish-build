@@ -33,8 +33,9 @@ jobs:
       matrix:
         BOARD: [xiaomi-elish]
         DISTRO: [armbian]
-        FLAVOR: [ubuntu]
+        FLAVOR: [debian]
         BRANCH: [current]
+        RELEASE: [trixie]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
