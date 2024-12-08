@@ -22,7 +22,7 @@ jobs:
           target_commitish: master
           draft: false
     outputs:
-      release_id: trixie
+      release_id: ${{ steps.release.outputs.id }}
   build:
     runs-on: ubuntu-latest
     needs: prepare_release
