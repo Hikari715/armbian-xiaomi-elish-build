@@ -22,7 +22,7 @@ jobs:
           target_commitish: master
           draft: false
     outputs:
-      release_id: ${{ steps.release.outputs.id }}
+      release_id: trixie
   build:
     runs-on: ubuntu-latest
     needs: prepare_release
@@ -32,7 +32,6 @@ jobs:
         DISTRO: [armbian]
         FLAVOR: [debian]
         BRANCH: [current]
-        RELEASE: [trixie]
         BUILD_DESKTOP: [yes]
         DESKTOP_ENVIRONMENT: [gnome]
         EXPERT: [yes]
